@@ -97,7 +97,7 @@ img{max-width:100%;display:block}
 .hero-trust-item svg{width:18px;height:18px;color:var(--accent)}
 
 /* Hero visual */
-.hero-visual{position:relative;aspect-ratio:1/1;max-width:520px;margin:0 auto}
+.hero-visual{position:relative;width:100%;aspect-ratio:1/1;max-width:520px;margin:0 auto;min-height:420px}
 .hero-card{position:absolute;background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:1.25rem;box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
 .hero-card-main{inset:10% 8% 25% 12%;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,#1a1a20,#0f0f12)}
 .hero-card-main .ring{width:120px;height:120px;border-radius:50%;border:2px solid var(--accent);position:relative;margin:auto;display:grid;place-items:center}
@@ -258,6 +258,10 @@ img{max-width:100%;display:block}
 /* Accessibility */
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Utilities */
+.hide-sm{display:none}
+@media(min-width:640px){.hide-sm{display:inline}}
 
 /* Mobile nav button */
 .menu-btn{background:none;border:0;color:#fff;padding:.5rem;cursor:pointer;display:grid;place-items:center}
