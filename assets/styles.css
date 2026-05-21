@@ -213,8 +213,9 @@ img{max-width:100%;display:block}
 .field{display:flex;flex-direction:column;gap:.4rem}
 .field label{font-size:.85rem;font-weight:500;color:#d0d0d8}
 .field input,.field select,.field textarea{
-  width:100%;padding:.85rem 1rem;background:var(--surface);border:1px solid var(--border);
-  border-radius:10px;color:#fff;font-family:inherit;font-size:.95rem;transition:border-color .2s ease;
+  width:100%;padding:.9rem 1rem;background:var(--surface);border:1px solid var(--border);
+  border-radius:10px;color:#fff;font-family:inherit;font-size:16px;transition:border-color .2s ease;
+  -webkit-appearance:none;appearance:none;min-height:48px;
 }
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,107,26,.15)}
 .field textarea{min-height:120px;resize:vertical}
@@ -262,6 +263,74 @@ img{max-width:100%;display:block}
 /* Utilities */
 .hide-sm{display:none}
 @media(min-width:640px){.hide-sm{display:inline}}
+
+/* Mobile optimisation: iPhone notch + Android safe areas */
+@supports(padding:max(0px)){
+  .nav-wrap{padding-left:max(0px,env(safe-area-inset-left));padding-right:max(0px,env(safe-area-inset-right))}
+  .footer-bot{padding-bottom:max(.5rem,env(safe-area-inset-bottom))}
+  body{padding-bottom:env(safe-area-inset-bottom)}
+}
+
+/* Tap targets >= 44px (Apple HIG / Android Material) */
+.btn,.nav-links a,.footer li a,.info-card a,.social a{min-height:44px;display:inline-flex;align-items:center}
+.footer li a{min-height:36px}
+
+/* Mobile-specific layout fixes */
+@media(max-width:640px){
+  /* Stop iOS auto-zoom on input focus already handled at 16px above */
+  body{font-size:16px;line-height:1.6}
+  .container{padding:0 1rem}
+  .nav{padding:.6rem .75rem;gap:.5rem}
+  .brand-text{font-size:.95rem}
+  .brand-text small{font-size:.58rem;letter-spacing:.14em}
+  .brand-mark{width:30px;height:30px}
+  .nav-cta{gap:.35rem}
+  .btn-sm{padding:.55rem .7rem;font-size:.8rem}
+  .hero{padding:7.5rem 0 3rem}
+  .hero-lead{font-size:1rem}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{justify-content:center;width:100%}
+  .hero-trust{gap:.85rem 1.25rem}
+  .hero-trust-item{font-size:.78rem}
+  /* Simplify hero visual on small screens - hide the floating extras */
+  .hero-visual{min-height:320px;max-width:380px}
+  .hero-card-float,.hero-card-bot{display:none}
+  .hero-card-main{inset:5% 5% 5% 5%}
+  .hero-card-main .ring{width:90px;height:90px}
+  .hero-card-main .ring svg{width:36px;height:36px}
+  .section{padding:3rem 0}
+  .page-head{padding:7rem 0 2rem}
+  .sec-head{margin-bottom:2rem}
+  .card{padding:1.25rem}
+  .testimonial{padding:2rem 1.25rem}
+  .cta-band{padding:2rem 1.25rem;border-radius:18px}
+  .cta-band .btn-row{flex-direction:column}
+  .cta-band .btn-row .btn{width:100%;justify-content:center}
+  .logo-strip{padding:1.75rem 0}
+  .logo-strip-inner{gap:1.25rem 1.5rem}
+  .logo-strip span{font-size:.85rem}
+  .stat-box{padding:1.1rem .75rem}
+  .stat-box .n{font-size:1.7rem}
+  .stat-box small{font-size:.75rem}
+  .footer{padding:3rem 0 1.5rem}
+  .footer-grid{gap:2rem}
+  .footer-bot{flex-direction:column;text-align:center;font-size:.78rem}
+  .gallery{gap:.6rem}
+  .gallery-item .label{font-size:.75rem;left:.6rem;right:.6rem;bottom:.6rem}
+  .contact-grid{gap:1.5rem}
+  .info-card{padding:1.25rem}
+  .field-row{gap:.85rem}
+  .form{gap:.85rem}
+  .map-frame{aspect-ratio:1/1}
+}
+
+/* Prevent horizontal scroll anywhere */
+html,body{overflow-x:hidden;max-width:100%}
+img,iframe,video{max-width:100%}
+
+/* Smooth touch scrolling on iOS */
+*{-webkit-tap-highlight-color:transparent}
+a,button,.card,.gallery-item{-webkit-touch-callout:none}
 
 /* Mobile nav button */
 .menu-btn{background:none;border:0;color:#fff;padding:.5rem;cursor:pointer;display:grid;place-items:center}
