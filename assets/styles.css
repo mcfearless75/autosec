@@ -75,9 +75,10 @@ img{max-width:100%;display:block}
 /* Hero */
 .hero{position:relative;padding:9rem 0 5rem;overflow:hidden;isolation:isolate}
 .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
-  radial-gradient(60% 50% at 70% 20%,rgba(255,107,26,.18),transparent 60%),
-  radial-gradient(40% 40% at 10% 80%,rgba(255,107,26,.08),transparent 60%),
-  linear-gradient(180deg,#0a0a0b,#0a0a0b);
+  linear-gradient(180deg,rgba(10,10,11,.78) 0%,rgba(10,10,11,.92) 65%,#0a0a0b 100%),
+  radial-gradient(60% 50% at 70% 20%,rgba(255,107,26,.22),transparent 60%),
+  url('cars-hero.avif') center/cover no-repeat,
+  #0a0a0b;
 }
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background-image:
   linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
@@ -204,9 +205,11 @@ img{max-width:100%;display:block}
 .footer li a{color:var(--muted);font-size:.92rem}
 .footer-bot{padding-top:2rem;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;color:var(--muted);font-size:.85rem}
 .social{display:flex;gap:.5rem}
-.social a{width:36px;height:36px;border-radius:8px;background:var(--surface);border:1px solid var(--border);display:grid;place-items:center;transition:all .2s ease;color:var(--muted)}
-.social a:hover{color:var(--accent);border-color:rgba(255,107,26,.4)}
-.social svg{width:16px;height:16px}
+.social a{width:40px;height:40px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:grid;place-items:center;transition:all .2s ease;color:var(--muted)}
+.social a:hover{color:var(--accent);border-color:rgba(255,107,26,.4);transform:translateY(-1px)}
+.social svg{width:18px;height:18px}
+.social img{width:20px;height:20px;object-fit:contain;display:block;filter:brightness(0) invert(.85);transition:filter .2s ease}
+.social a:hover img{filter:brightness(0) invert(1)}
 
 /* Forms */
 .form{display:grid;gap:1rem}

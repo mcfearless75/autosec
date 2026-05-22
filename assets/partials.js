@@ -54,8 +54,8 @@
           <p style="margin-top:1rem;max-width:22rem;font-size:.92rem">Birmingham&rsquo;s trusted vehicle security specialists. Autowatch Ghost immobilisers, Thatcham-approved trackers and alarm systems &mdash; fitted by approved installers.</p>
           <div class="social" aria-label="Social media">
             <a href="https://www.instagram.com/360autoss" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="https://www.facebook.com/360autosolutions" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="https://wa.me/441217981713" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8 1-1 1.2-.4.2-.7.1c-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2z"/></svg></a>
+            <a href="https://www.facebook.com/360autosolutions" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/Facebook-White-Logo-PNG-File.png" alt="" width="20" height="20" loading="lazy"></a>
+            <a href="https://wa.me/447480236664" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/whatsapp_icon.png" alt="" width="20" height="20" loading="lazy"></a>
           </div>
         </div>
         <div>
