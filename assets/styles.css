@@ -277,7 +277,8 @@ img{max-width:100%;display:block}
 }
 
 /* Tap targets >= 44px (Apple HIG / Android Material) */
-.btn,.nav-links a,.footer li a,.info-card a,.social a{min-height:44px;display:inline-flex;align-items:center}
+.btn,.nav-links a,.footer li a,.info-card a{min-height:44px;display:inline-flex;align-items:center}
+.social a{justify-content:center}
 .footer li a{min-height:36px}
 
 /* Mobile-specific layout fixes */
