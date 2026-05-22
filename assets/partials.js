@@ -10,11 +10,10 @@
         <span class="brand-text">360 AUTO SECURITY<small>Birmingham &middot; TASSA Approved</small></span>
       </a>
       <div class="nav-links">
-        <a href="index.html" data-nav="index">Home</a>
-        <a href="services.html" data-nav="services">Services</a>
-        <a href="about.html" data-nav="about">About</a>
-        <a href="gallery.html" data-nav="gallery">Gallery</a>
-        <a href="contact.html" data-nav="contact">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#about">Why us</a>
+        <a href="https://www.instagram.com/360autoss" target="_blank" rel="noopener">Instagram</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="nav-cta">
         <a href="tel:+441217981713" class="btn btn-ghost btn-sm" aria-label="Call us">
@@ -32,11 +31,11 @@
     <button class="menu-btn close" aria-label="Close menu" id="menuClose">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+    <a href="#services">Services</a>
+    <a href="#about">Why us</a>
+    <a href="https://www.instagram.com/360autoss" target="_blank" rel="noopener">Instagram</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/447480236664" target="_blank" rel="noopener" class="btn btn-wa" style="margin-top:.5rem;justify-content:center">WhatsApp 07480 236664</a>
     <a href="tel:+441217981713" class="btn btn-primary" style="margin-top:1rem;justify-content:center">Call 0121 798 1713</a>
   </div>`;
 

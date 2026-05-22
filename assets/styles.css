@@ -349,6 +349,40 @@ img,iframe,video{max-width:100%}
 *{-webkit-tap-highlight-color:transparent}
 a,button,.card,.gallery-item{-webkit-touch-callout:none}
 
+/* WhatsApp button variant */
+.btn-wa{background:#25d366;color:#0a0a0b}
+.btn-wa:hover{background:#1ebe5a;color:#0a0a0b;transform:translateY(-1px);box-shadow:0 10px 30px -10px #25d366}
+.btn-wa svg{width:18px;height:18px}
+
+/* Contact actions (one-pager) */
+.contact-actions{display:grid;gap:.85rem;margin:2rem 0 2.5rem}
+.contact-action{display:flex;align-items:center;gap:1.1rem;padding:1.1rem 1.25rem;background:var(--surface);border:1px solid var(--border);border-radius:14px;transition:all .2s ease;cursor:pointer}
+.contact-action:hover{border-color:rgba(255,107,26,.4);transform:translateY(-2px);background:linear-gradient(180deg,var(--surface),var(--bg-2))}
+.ca-icon{width:50px;height:50px;border-radius:12px;background:rgba(255,107,26,.1);border:1px solid rgba(255,107,26,.25);color:var(--accent);display:grid;place-items:center;flex-shrink:0}
+.ca-icon svg{width:22px;height:22px}
+.contact-action-wa .ca-icon{background:rgba(37,211,102,.12);border-color:rgba(37,211,102,.3);color:#25d366}
+.ca-label{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.15rem}
+.ca-value{font-family:'Space Grotesk',sans-serif;font-size:1.25rem;font-weight:600;color:#fff;line-height:1.1}
+.ca-sub{font-size:.82rem;color:var(--muted);margin-top:.2rem}
+
+.addr-block{display:grid;gap:2rem;padding:1.75rem;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;margin-top:1.5rem}
+@media(min-width:700px){.addr-block{grid-template-columns:1.4fr 1fr;align-items:center}}
+.addr-block strong{display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.addr-block p{color:#d0d0d8;margin:0 0 .5rem;font-size:.92rem}
+.socials-large{display:flex;flex-direction:column;gap:.5rem}
+.socials-large a{display:flex;align-items:center;gap:.75rem;padding:.7rem .9rem;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;color:#d6d6dc;font-weight:500;font-size:.92rem;transition:all .2s ease}
+.socials-large a svg{width:20px;height:20px;flex-shrink:0}
+.socials-large a.s-ig:hover{background:linear-gradient(135deg,#f09433,#dc2743 50%,#bc1888);border-color:transparent;color:#fff}
+.socials-large a.s-fb:hover{background:#1877f2;border-color:transparent;color:#fff}
+
+/* Mobile sticky CTA bar */
+.mobile-cta-bar{position:fixed;bottom:0;left:0;right:0;z-index:55;display:none;background:rgba(10,10,11,.92);backdrop-filter:blur(14px);border-top:1px solid var(--border);padding:.6rem;gap:.5rem;padding-bottom:max(.6rem,env(safe-area-inset-bottom))}
+.mobile-cta-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;min-height:48px}
+.mobile-cta-bar svg{width:18px;height:18px}
+.mcb-call{background:var(--accent);color:#0a0a0b}
+.mcb-wa{background:#25d366;color:#0a0a0b}
+@media(max-width:760px){.mobile-cta-bar{display:flex}body{padding-bottom:72px}}
+
 /* Mobile nav button */
 .menu-btn{background:none;border:0;color:#fff;padding:.5rem;cursor:pointer;display:grid;place-items:center}
 .menu-btn svg{width:22px;height:22px}
