@@ -25,6 +25,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 
+<!-- Favicon + PWA -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- OG image -->
+<meta property="og:image" content="https://www.360autos.co.uk/assets/cars-hero.avif">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="360 Auto Security workshop, Birmingham — vehicle security specialists">
+<meta name="twitter:image" content="https://www.360autos.co.uk/assets/cars-hero.avif">
+<meta name="author" content="360 Auto Security">
+
 <!-- LocalBusiness schema -->
 <script type="application/ld+json">
 {
@@ -62,6 +75,10 @@
     "https://www.instagram.com/360autoss",
     "https://www.facebook.com/360autosolutions"
   ],
+  "contactPoint":[
+    {"@type":"ContactPoint","telephone":"+44-121-798-1713","contactType":"customer service","areaServed":"GB","availableLanguage":"English"},
+    {"@type":"ContactPoint","telephone":"+44-7480-236664","contactType":"sales","contactOption":"TollFree","areaServed":"GB","availableLanguage":"English"}
+  ],
   "hasOfferCatalog":{
     "@type":"OfferCatalog","name":"Vehicle Security Services",
     "itemListElement":[
@@ -72,6 +89,31 @@
     ]
   }
 }
+</script>
+
+<!-- FAQ schema (homepage) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Will an Autowatch Ghost immobiliser stop key theft and relay attacks?",
+     "acceptedAnswer":{"@type":"Answer","text":"Yes. The Ghost is a CAN bus immobiliser that requires a unique PIN sequence entered via existing buttons in the vehicle before the engine will start. Even if a thief has your key or clones the signal, the car won't drive without the PIN."}},
+    {"@type":"Question","name":"Do I need an S5 or S7 tracker?",
+     "acceptedAnswer":{"@type":"Answer","text":"S5 trackers include Automatic Driver Recognition (ADR) tags and live 24/7 control-room monitoring — usually mandated by insurers on high-value vehicles. S7 trackers are self-monitored via your smartphone and suit lower-value or daily-driver cars. We'll recommend based on your vehicle and insurer requirements."}},
+    {"@type":"Question","name":"Where are you based and do you offer mobile installation?",
+     "acceptedAnswer":{"@type":"Answer","text":"Our workshop is at Unit 5A, Millards Industrial Estate, Cornwallis Road, West Bromwich B70 9BY. Mobile installation is available across Birmingham, Walsall, Wolverhampton, Dudley, Sutton Coldfield and the wider West Midlands — no mileage charge within 15 miles of B70."}},
+    {"@type":"Question","name":"Are your installs insurance approved?",
+     "acceptedAnswer":{"@type":"Answer","text":"Yes. 360 Auto Security is a TASSA-approved installer — the UK's recognised standard for vehicle security installations. All Thatcham-categorised systems we fit are accepted by major UK insurers including Admiral, Aviva, Direct Line, LV= and specialist prestige insurers."}},
+    {"@type":"Question","name":"How long does installation take?",
+     "acceptedAnswer":{"@type":"Answer","text":"Most Ghost immobiliser installs take 1.5–3 hours. Tracker fitting is typically 1.5–2 hours. Alarm upgrades vary by vehicle. We'll confirm the timing when we quote."}}
+  ]
+}
+</script>
+
+<!-- Website + Organization -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","url":"https://www.360autos.co.uk/","name":"360 Auto Security","inLanguage":"en-GB","publisher":{"@id":"https://www.360autos.co.uk/#business"}}
 </script>
 </head>
 <body data-page="index">
@@ -230,6 +272,23 @@
         <a href="about.html" class="btn btn-ghost">More about us
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="container" style="max-width:780px">
+      <div class="sec-head">
+        <span class="eyebrow">Common questions</span>
+        <h2 id="faq-h">What people ask before booking</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Will an Autowatch Ghost stop key theft and relay attacks?</summary><p>Yes. The Ghost is a CAN bus immobiliser that requires a unique PIN sequence entered via existing buttons in the vehicle before the engine will start. Even if a thief has your key or clones the signal, the car won&rsquo;t drive without the PIN.</p></details>
+        <details><summary>Do I need an S5 or S7 tracker?</summary><p>S5 trackers include Automatic Driver Recognition (ADR) tags and live 24/7 control-room monitoring &mdash; usually mandated by insurers on high-value vehicles. S7 trackers are self-monitored via your smartphone and suit lower-value or daily-driver cars. We&rsquo;ll recommend based on your vehicle and insurer requirements.</p></details>
+        <details><summary>Where are you based and do you offer mobile installation?</summary><p>Our workshop is at Unit 5A, Millards Industrial Estate, Cornwallis Road, West Bromwich B70 9BY. Mobile installation is available across Birmingham, Walsall, Wolverhampton, Dudley, Sutton Coldfield and the wider West Midlands &mdash; no mileage charge within 15 miles of B70.</p></details>
+        <details><summary>Are your installs insurance approved?</summary><p>Yes. 360 Auto Security is a TASSA-approved installer &mdash; the UK&rsquo;s recognised standard for vehicle security installations. All Thatcham-categorised systems we fit are accepted by major UK insurers.</p></details>
+        <details><summary>How long does installation take?</summary><p>Most Ghost immobiliser installs take 1.5&ndash;3 hours. Tracker fitting is typically 1.5&ndash;2 hours. Alarm upgrades vary by vehicle. We&rsquo;ll confirm the timing when we quote.</p></details>
       </div>
     </div>
   </section>

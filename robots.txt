@@ -2,4 +2,21 @@ User-agent: *
 Allow: /
 Disallow: /assets/partials.js
 
+# AI crawlers — explicit allow for GEO / AI Overviews / ChatGPT / Perplexity
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 Sitemap: https://www.360autos.co.uk/sitemap.xml
+Host: https://www.360autos.co.uk

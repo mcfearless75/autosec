@@ -1,0 +1,14 @@
+{
+  "name": "360 Auto Security",
+  "short_name": "360 Auto Sec",
+  "description": "TASSA approved vehicle security specialists in Birmingham & the West Midlands.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0b",
+  "theme_color": "#ff6b1a",
+  "lang": "en-GB",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
