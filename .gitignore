@@ -1,0 +1,14 @@
+# Agent / tooling metadata
+.claude/
+.claude-flow/
+.ruflo/
+.hive-mind/
+.swarm/
+.mcp/
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+.env
+.env.*
+!.env.example
