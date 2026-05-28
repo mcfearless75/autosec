@@ -45,8 +45,11 @@
         <h2 style="font-size:1.6rem">Request a quote</h2>
         <p style="margin-bottom:1.5rem">Or call <a href="tel:+441217981713" style="color:var(--accent)">0121 798 1713</a> &middot; <a href="https://wa.me/447480236664" target="_blank" rel="noopener" style="color:var(--accent)">WhatsApp</a></p>
 
-        <!-- Replace formspree ID with your own at https://formspree.io -->
-        <form class="form" action="https://formspree.io/f/yourFormId" method="POST" id="quoteForm">
+        <form class="form" action="https://formsubmit.co/uk360autos@hotmail.com" method="POST" id="quoteForm">
+          <input type="hidden" name="_subject" value="New enquiry from 360 Auto Security website" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="field-row">
             <div class="field">
               <label for="name">Your name</label>
@@ -89,7 +92,6 @@
             <label for="message">Anything else? (optional)</label>
             <textarea id="message" name="message" placeholder="Mobile install needed? Insurance requirement? Preferred date?"></textarea>
           </div>
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <button type="submit" class="btn btn-primary" style="justify-content:center">Send my quote request
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
@@ -143,14 +145,7 @@
 <div id="site-footer"></div>
 <script src="assets/partials.js" defer></script>
 <script>
-  // Light client validation + thank-you state without a network call (works even before formspree wired up)
-  document.getElementById('quoteForm')?.addEventListener('submit',function(e){
-    const action = this.getAttribute('action');
-    if(!action || action.includes('yourFormId')){
-      e.preventDefault();
-      this.innerHTML = '<div style="padding:2rem;text-align:center;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);border-radius:14px"><h3 style="color:#22c55e;margin-bottom:.5rem">Form not connected yet</h3><p style="margin:0">Wire up a Formspree / Netlify Forms endpoint in <code>contact.html</code> &mdash; or message us via WhatsApp / call in the meantime.</p></div>';
-    }
-  });
+  // Form submits to FormSubmit — no client-side interception needed.
 </script>
 </body>
 </html>
